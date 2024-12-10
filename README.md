@@ -18,3 +18,8 @@ A modern **Project Card Slider** built using the Swiper.js library, designed for
 1. Clone this repository:
    ```bash
    git clone https://github.com/johnpaulocumen/project-card-slider-swiper-template1.git
+
+## Project Screenshot
+Here’s what the project looks like:
+
+![Swiper Preview](assets/swipter-template1.png)
