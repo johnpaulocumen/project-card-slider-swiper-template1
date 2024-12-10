@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Prevent scrolling */
+  }
+  
+  .project-slider {
+    width: 50%;
+    height: 375px;
+    position: relative;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  }
+  
+  .project-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1e1e1e; /* Dark card background */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Stronger shadow */
+    overflow: hidden;
+    visibility: hidden; /* Hidden by default */
+    opacity: 0; /* Invisible by default */
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+  }
+  
+  .swiper-slide-active {
+    visibility: visible; /* Show only the active slide */
+    opacity: 1;
+  }
+  
+  .project-card {
+    display: flex;
+    width: 90%;
+    height: 100%;
+  }
+  
+  .project-card-image {
+    flex: 0 0 60%; /* Image: 60% width */
+    padding-left: -30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .project-card-image img {
+    width: 100%; /* Automatically fit the container width */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 10px 0 0 10px; /* Optional: rounded corners */
+  }
+  
+  .project-card-content {
+    flex: 0 0 35%; /* Content: 35% width */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .project-card-content h2 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+    color: #e0e0e0; /* Light text */
+  }
+  
+  .project-card-content p {
+    margin: 0 0 20px;
+    color: #b0b0b0; /* Subtle text color */
+    font-size: 1em;
+  }
+  
+  .project-card-content .project-btn {
+    padding: 10px 20px;
+    background-color: #1f6feb; /* Highlight color for buttons */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+  }
+  
+  .project-card-content .project-btn:hover {
+    background-color: #185abc; /* Slightly darker on hover */
+  }
+  
+  /* Navigation buttons */
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #1f6feb; /* Highlight navigation buttons */
+    transform: scale(0.8);
+    top: 55%;
+    transform: translateY(-50%);
+  }
+  
+  .swiper-button-next {
+    right: -5%;
+  }
+  
+  .swiper-button-prev {
+    left: -5%;
+  }
+  
+  /* Pagination circles */
+  .swiper-pagination {
+    bottom: 20px;
+  }
+  
+  .swiper-pagination-bullet {
+    background: #1f6feb; /* Highlight pagination bullets */
+  }
+  
+  .swiper-pagination-bullet-active {
+    background: #185abc; /* Slightly darker for active bullets */
+  }
+  
+  /* Responsive adjustments for mobile screens */
+  @media (max-width: 768px) {
+    .project-slider {
+      width: 75%;
+      height: auto;
+    }
+  
+    .project-card {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .project-card-image {
+      flex: 0 0 auto;
+      padding-top: 20px;
+    }
+  
+    .project-card-content {
+      flex: 0 0 auto;
+      padding: 50px;
+    }
+  
+    .swiper-button-next,
+    .swiper-button-prev {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  
+    .swiper-button-next {
+      right: -50px;
+    }
+  
+    .swiper-button-prev {
+      left: -50px;
+    }
+  }
+  
