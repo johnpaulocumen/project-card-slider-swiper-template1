@@ -17,4 +17,4 @@ A modern **Project Card Slider** built using the Swiper.js library, designed for
 ## Installation
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/project-card-slider-swiper-ui.git
+   git clone https://github.com/johnpaulocumen/project-card-slider-swiper-template1.git
